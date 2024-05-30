@@ -153,7 +153,7 @@
                   <text value="√x"/>
                 </properties>
               </component>
-              <component id="a5be9" class="org.example.CustomJButton" binding="inverseButton">
+              <component id="a5be9" class="org.example.CustomJButton" binding="negateButton">
                 <constraints>
                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                 </constraints>

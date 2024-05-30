@@ -2,13 +2,9 @@ package org.example;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import java.awt.event.KeyEvent;
 import java.awt.font.TextLayout;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
 public class GUI {
     private JPanel root;
@@ -23,7 +19,7 @@ public class GUI {
     private CustomJButton eraseButton;
     private CustomJButton oneOverXButton;
     private CustomJButton powButton;
-    private CustomJButton inverseButton;
+    private CustomJButton negateButton;
     private CustomJButton n0Button;
     private CustomJButton dotButton;
     private CustomJButton n1Button;
@@ -245,7 +241,7 @@ public class GUI {
             currNumber = "";
         } else if(currItem.operation == null) {
             currItem.operation = operation;
-            if(!currNumber.isEmpty()) if(currItem.left.number != Double.parseDouble(currNumber)) currItem.left = new Value(Double.parseDouble(currNumber));
+            if(!currNumber.isEmpty()) if(currItem.left.calculate() != Double.parseDouble(currNumber)) currItem.left = new Value(Double.parseDouble(currNumber));
         } else if(currItem.right == null) {
             if(currNumber.isEmpty()) {
                 currItem.operation = operation;
@@ -255,7 +251,7 @@ public class GUI {
                 currItem.right = null;
                 currItem.operation = operation;
                 currNumber = "";
-                setFieldText(String.valueOf(currItem.left.number));
+                setFieldText(String.valueOf(currItem.left.calculate()));
             }
         }
 
@@ -299,9 +295,9 @@ public class GUI {
             else
                 currItem.left = new Value(Double.parseDouble(currNumber) / 100.0);
 
-            currNumber = String.valueOf(currItem.left.number);
+            currNumber = String.valueOf(currItem.left.calculate());
         } else if(currItem.operation == null) {
-            currItem.left = new Value(currItem.left.number / 100.0);
+            currItem.left = new Value(currItem.left.calculate() / 100.0);
             currNumber = String.valueOf(currItem.left.calculate());
         } else if(currItem.right == null) {
             if(currNumber.isEmpty())
@@ -309,15 +305,24 @@ public class GUI {
             else
                 currItem.right = new Value(Double.parseDouble(currNumber) / 100.0);
 
-            currNumber = String.valueOf(currItem.right.number);
+            currNumber = String.valueOf(currItem.right.calculate());
         } else {
-            currItem.right = new Value(currItem.right.number / 100.0);
+            currItem.right = new Value(currItem.right.calculate() / 100.0);
             currNumber = String.valueOf(currItem.right.calculate());
         }
 
         renderField();
         renderUpField(false);
         currNumber = "";
+    }
+
+    private void applyNegation() {
+        if(!currNumber.isEmpty()) {
+            currNumber = String.valueOf(-Double.parseDouble(currNumber));
+            renderField();
+        } else {
+            applyFunction(Function.NEGATE);
+        }
     }
 
     private void calculate() {
@@ -378,7 +383,7 @@ public class GUI {
             case '-' -> minusButton.doClick();
             case '*' -> multiplyButton.doClick();
             case '/' -> divideButton.doClick();
-            case '=' -> equalsButton.doClick();
+            case '=', '\n' -> equalsButton.doClick();
 
             case '0' -> n0Button.doClick();
             case '1' -> n1Button.doClick();
@@ -390,6 +395,14 @@ public class GUI {
             case '7' -> n7Button.doClick();
             case '8' -> n8Button.doClick();
             case '9' -> n9Button.doClick();
+        }
+
+        switch (e.getKeyCode()) {
+            case KeyEvent.VK_S -> powButton.doClick();
+            case KeyEvent.VK_R -> sqrtButton.doClick();
+            case KeyEvent.VK_O -> oneOverXButton.doClick();
+            case KeyEvent.VK_P -> percentButton.doClick();
+            case KeyEvent.VK_N -> negateButton.doClick();
         }
     }
 
@@ -426,6 +439,8 @@ public class GUI {
         powButton.addActionListener(event -> {applyFunction(Function.SQR);});
         sqrtButton.addActionListener(event -> {applyFunction(Function.SQRT);});
         oneOverXButton.addActionListener(event -> {applyFunction(Function.INVERSE);});
+
+        negateButton.addActionListener(event -> {applyNegation();});
 
         percentButton.addActionListener(event -> {applyPercent();});
 
