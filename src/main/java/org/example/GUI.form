@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.GUI">
+  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="408"/>
+    </constraints>
+    <properties>
+      <background color="-14803166"/>
+      <focusable value="false"/>
+      <font size="48"/>
+      <foreground color="-2104859"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="baa42" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="8f780" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14803166"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f2a8b" class="org.example.CustomJButton" binding="plusButton">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="+"/>
+                </properties>
+              </component>
+              <component id="4af6a" class="org.example.CustomJButton" binding="minusButton">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="-"/>
+                </properties>
+              </component>
+              <component id="4bbfb" class="org.example.CustomJButton" binding="multiplyButton">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="×"/>
+                </properties>
+              </component>
+              <component id="aab95" class="org.example.CustomJButton" binding="divideButton">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="÷"/>
+                </properties>
+              </component>
+              <component id="def36" class="org.example.CustomJButton" binding="backspaceButton">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="⌫"/>
+                </properties>
+              </component>
+              <component id="fd605" class="org.example.CustomJButton" binding="equalsButton">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-26207"/>
+                  <foreground color="-14144979"/>
+                  <hideActionText value="false"/>
+                  <hoveredColor color="-28777"/>
+                  <text value="="/>
+                </properties>
+              </component>
+              <component id="97c0b" class="org.example.CustomJButton" binding="clearButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="C"/>
+                </properties>
+              </component>
+              <component id="8561a" class="org.example.CustomJButton" binding="eraseButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="CE"/>
+                </properties>
+              </component>
+              <component id="8c488" class="org.example.CustomJButton" binding="percentButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="%"/>
+                </properties>
+              </component>
+              <component id="10f84" class="org.example.CustomJButton" binding="oneOverXButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="1/x"/>
+                </properties>
+              </component>
+              <component id="19b74" class="org.example.CustomJButton" binding="powButton">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="x^2"/>
+                </properties>
+              </component>
+              <component id="adee5" class="org.example.CustomJButton" binding="sqrtButton">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14144979"/>
+                  <hoveredColor color="-12829119"/>
+                  <text value="√x"/>
+                </properties>
+              </component>
+              <component id="a5be9" class="org.example.CustomJButton" binding="inverseButton">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="+/-"/>
+                </properties>
+              </component>
+              <component id="822f" class="org.example.CustomJButton" binding="n0Button">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <component id="1153b" class="org.example.CustomJButton" binding="dotButton">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="."/>
+                </properties>
+              </component>
+              <component id="8d9d6" class="org.example.CustomJButton" binding="n1Button">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="1"/>
+                </properties>
+              </component>
+              <component id="371fe" class="org.example.CustomJButton" binding="n2Button">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="2"/>
+                </properties>
+              </component>
+              <component id="f01d5" class="org.example.CustomJButton" binding="n3Button">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="3"/>
+                </properties>
+              </component>
+              <component id="c54b5" class="org.example.CustomJButton" binding="n4Button">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="4"/>
+                </properties>
+              </component>
+              <component id="758fa" class="org.example.CustomJButton" binding="n5Button">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="5"/>
+                </properties>
+              </component>
+              <component id="bda22" class="org.example.CustomJButton" binding="n6Button">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="6"/>
+                </properties>
+              </component>
+              <component id="eabf6" class="org.example.CustomJButton" binding="n7Button">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="7"/>
+                </properties>
+              </component>
+              <component id="7bc41" class="org.example.CustomJButton" binding="n8Button">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="8"/>
+                </properties>
+              </component>
+              <component id="65da" class="org.example.CustomJButton" binding="n9Button">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12829119"/>
+                  <hoveredColor color="-14144979"/>
+                  <text value="9"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="70e6e" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14803166"/>
+          <enabled value="true"/>
+          <foreground color="-14803166"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="fb71a" binding="fieldPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14803166"/>
+              <foreground color="-13947600"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="720f2" class="javax.swing.JLabel" binding="field">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="48"/>
+                  <foreground color="-2039066"/>
+                  <horizontalAlignment value="4"/>
+                  <horizontalTextPosition value="4"/>
+                  <text value="0"/>
+                </properties>
+              </component>
+              <vspacer id="88c0b">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <hspacer id="46e44">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="79429">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <scrollpane id="42d65">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14803166"/>
+              <enabled value="true"/>
+              <focusable value="false"/>
+              <foreground color="-14803166"/>
+              <horizontalScrollBarPolicy value="32"/>
+              <opaque value="true"/>
+              <requestFocusEnabled value="true"/>
+              <verticalScrollBarPolicy value="21"/>
+              <visible value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="331f3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints/>
+                <properties>
+                  <background color="-14803166"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="c4e04" class="javax.swing.JLabel" binding="upField">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="20"/>
+                      <foreground color="-2039066"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
